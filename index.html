@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>منوی کافه</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      background: #fafafa;
+      color: #222;
+      line-height: 1.6;
+    }
+    header {
+      background: #222;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      background: #f0f0f0;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    .menu {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .category {
+      margin-top: 3rem;
+    }
+    .category h2 {
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px dashed #ddd;
+    }
+    .item img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-left: 1rem;
+    }
+    .item-info {
+      flex-grow: 1;
+    }
+    .item-info span {
+      display: block;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #eee;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>منوی کافه</h1>
+  </header>
+
+  <nav>
+    <a href="#main-dishes">🍝 غذاهای اصلی</a>
+    <a href="#hot-drinks">☕ نوشیدنی‌های گرم</a>
+  </nav>
+
+  <main class="menu">
+    <section class="category" id="main-dishes">
+      <h2>🍝 غذاهای اصلی</h2>
+      <div class="item">
+        <img src="images/pasta-chicken.jpg" alt="پاستا آلفردو چیکن">
+        <div class="item-info">
+          <span>پاستا آلفردو چیکن</span>
+          <span>۲۴۵,۰۰۰ تومان</span>
+        </div>
+      </div>
+      <div class="item">
+        <img src="images/pasta-beef.jpg" alt="پاستا آلفردو بیف">
+        <div class="item-info">
+          <span>پاستا آلفردو بیف</span>
+          <span>۳۶۵,۰۰۰ تومان</span>
+        </div>
+      </div>
+      <div class="item">
+        <img src="images/pesto-vege.jpg" alt="پاستا پستو وجترین">
+        <div class="item-info">
+          <span>پاستا پستو وجترین</span>
+          <span>۱۲۵,۰۰۰ تومان</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="category" id="hot-drinks">
+      <h2>☕ نوشیدنی‌های گرم</h2>
+      <div class="item">
+        <img src="images/espresso.jpg" alt="اسپرسو">
+        <div class="item-info">
+          <span>اسپرسو</span>
+          <span>۸۵,۰۰۰ تومان</span>
+        </div>
+      </div>
+      <div class="item">
+        <img src="images/latte.jpg" alt="لاته">
+        <div class="item-info">
+          <span>لاته</span>
+          <span>۱۱۵,۰۰۰ تومان</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    آدرس: تهران، خیابان مثال - تلفن: ۰۲۱-۱۲۳۴۵۶۷۸
+  </footer>
+</body>
+</html>
