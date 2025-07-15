@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>منوی کافه</title>
+  <title>کافه سین</title>
+  <link href="https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css" rel="stylesheet" type="text/css">
   <style>
     body {
-      font-family: sans-serif;
+      font-family: Vazir, sans-serif;
       margin: 0;
       background: #fafafa;
       color: #222;
@@ -45,23 +46,37 @@
     .item {
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      padding: 1rem;
       margin-bottom: 1.5rem;
-      padding-bottom: 1rem;
-      border-bottom: 1px dashed #ddd;
+      transition: transform 0.2s ease;
     }
-    .item img {
+    .item:hover {
+      transform: scale(1.02);
+    }
+    .item .image-placeholder {
       width: 80px;
       height: 80px;
-      object-fit: cover;
-      border-radius: 8px;
+      background: #ccc;
+      border-radius: 10px;
       margin-left: 1rem;
     }
     .item-info {
       flex-grow: 1;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
-    .item-info span {
-      display: block;
+    .item-name {
+      font-size: 1rem;
+    }
+    .item-price {
+      font-weight: bold;
+      color: #555;
+      margin-right: 1rem;
+      white-space: nowrap;
     }
     footer {
       text-align: center;
@@ -74,7 +89,7 @@
 </head>
 <body>
   <header>
-    <h1>منوی کافه</h1>
+    <h1>کافه سین</h1>
   </header>
 
   <nav>
@@ -86,24 +101,24 @@
     <section class="category" id="main-dishes">
       <h2>🍝 غذاهای اصلی</h2>
       <div class="item">
-        <img src="images/pasta-chicken.jpg" alt="پاستا آلفردو چیکن">
+        <div class="image-placeholder"></div>
         <div class="item-info">
-          <span>پاستا آلفردو چیکن</span>
-          <span>۲۴۵,۰۰۰ تومان</span>
+          <span class="item-name">پاستا آلفردو چیکن</span>
+          <span class="item-price">۲۴۵,۰۰۰ تومان</span>
         </div>
       </div>
       <div class="item">
-        <img src="images/pasta-beef.jpg" alt="پاستا آلفردو بیف">
+        <div class="image-placeholder"></div>
         <div class="item-info">
-          <span>پاستا آلفردو بیف</span>
-          <span>۳۶۵,۰۰۰ تومان</span>
+          <span class="item-name">پاستا آلفردو بیف</span>
+          <span class="item-price">۳۶۵,۰۰۰ تومان</span>
         </div>
       </div>
       <div class="item">
-        <img src="images/pesto-vege.jpg" alt="پاستا پستو وجترین">
+        <div class="image-placeholder"></div>
         <div class="item-info">
-          <span>پاستا پستو وجترین</span>
-          <span>۱۲۵,۰۰۰ تومان</span>
+          <span class="item-name">پاستا پستو وجترین</span>
+          <span class="item-price">۱۲۵,۰۰۰ تومان</span>
         </div>
       </div>
     </section>
@@ -111,24 +126,45 @@
     <section class="category" id="hot-drinks">
       <h2>☕ نوشیدنی‌های گرم</h2>
       <div class="item">
-        <img src="images/espresso.jpg" alt="اسپرسو">
+        <div class="image-placeholder"></div>
         <div class="item-info">
-          <span>اسپرسو</span>
-          <span>۸۵,۰۰۰ تومان</span>
+          <span class="item-name">اسپرسو</span>
+          <span class="item-price">۸۵,۰۰۰ تومان</span>
         </div>
       </div>
       <div class="item">
-        <img src="images/latte.jpg" alt="لاته">
+        <div class="image-placeholder"></div>
         <div class="item-info">
-          <span>لاته</span>
-          <span>۱۱۵,۰۰۰ تومان</span>
+          <span class="item-name">لاته</span>
+          <span class="item-price">۱۱۵,۰۰۰ تومان</span>
+        </div>
+      </div>
+      <div class="item">
+        <div class="image-placeholder"></div>
+        <div class="item-info">
+          <span class="item-name">کاپوچینو</span>
+          <span class="item-price">۱۱۵,۰۰۰ تومان</span>
+        </div>
+      </div>
+      <div class="item">
+        <div class="image-placeholder"></div>
+        <div class="item-info">
+          <span class="item-name">آمریکانو</span>
+          <span class="item-price">۹۵,۰۰۰ تومان</span>
+        </div>
+      </div>
+      <div class="item">
+        <div class="image-placeholder"></div>
+        <div class="item-info">
+          <span class="item-name">هات چاکلت</span>
+          <span class="item-price">۱۱۵,۰۰۰ تومان</span>
         </div>
       </div>
     </section>
   </main>
 
   <footer>
-    آدرس: تهران، خیابان مثال - تلفن: ۰۲۱-۱۲۳۴۵۶۷۸
+    آدرس: آباده، بلوار بوعلی، بریدگی آخر - تلفن: ۰۲۱-۱۲۳۴۵۶۷۸
   </footer>
 </body>
 </html>
